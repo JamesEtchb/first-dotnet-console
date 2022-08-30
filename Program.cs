@@ -9,11 +9,11 @@ account.MakeDeposit(100);
 
 BankAccount account2 = new SavingsAccount(500);
 
-// try {
-// decimal newBalance = account2.MakeDepositGetBalance(-1);
-// } catch(Exception ex) {
-//     Console.WriteLine($"We got an error when running MakeDepositGetBalance(-1)")
-// }
+try {
+decimal newBalance = account2.MakeDepositGetBalance(-1);
+} catch(Exception ex) {
+    Console.WriteLine($"We got an error when running MakeDepositGetBalance(-1)");
+}
 
 Console.WriteLine($"The balance of account is {account.Balance}");
 Console.WriteLine($"The account number is {account.AccountNumber}");
